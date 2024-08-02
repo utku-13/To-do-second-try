@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (task && taskId) {
         // Display the task to be edited.
         const listItem = document.createElement('li');
-        listItem.textContent = task;
-        taskList.appendChild(listItem);
+    listItem.textContent = `--> ${task}`;
+    taskList.appendChild(listItem);
 
         // Populate the input field with the task
         // editInput.value = task; "this was like a placeholder but there is no need because we already display current task above!"
@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Delete button
-        const deleteButton = document.createElement('button');
-        deleteButton.style.margin = '30px';
-        deleteButton.textContent = 'Delete';
+        // const deleteButton = document.createElement('button');
+        const deleteButton = document.getElementById('deletebuttonID');
+        //deleteButton.textContent = 'Delete the Task';
         deleteButton.addEventListener('click', () => {
             fetch(`/tasks/${taskId}`, {
                 method: 'DELETE'
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('Failed to delete task');
             });
         });
-        listItem.appendChild(deleteButton);
+        // listItem.appendChild(deleteButton);
     } else {
         alert('No task to rearrange');
     }

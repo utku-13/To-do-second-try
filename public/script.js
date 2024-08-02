@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 inputButton.value = '';
             });
         } else {
-            alert('Lütfen yapılacak görevi girin!');
+            alert('Please insert the task first!');
         }
     }
 
@@ -131,13 +131,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 body: JSON.stringify({ task: task, completed: checkbox.checked })
             });
-            checkbox.addEventListener('change', () => {
-                if (checkbox.checked) {
-                    listItem.style.textDecoration = 'line-through';
-                } else {
-                    listItem.style.textDecoration = 'none';
-                }
-            });
+            // checkbox.addEventListener('change', () => {
+            //     if (checkbox.checked) {
+            //         listItem.style.textDecoration = 'line-through';
+            //     } else {
+            //         listItem.style.textDecoration = 'none';
+            //     }
+            // });  it makes line-through for all of them even buttons not looking nice so commented out.
         });
         listItem.appendChild(checkbox);
 
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Silme düğmesi ekle
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Sil';
+        deleteButton.textContent = 'Delete';
         deleteButton.addEventListener('click', () => {
             fetch(`/tasks/${id}`, {
                 method: 'DELETE'

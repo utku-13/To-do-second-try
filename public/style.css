@@ -1,5 +1,5 @@
 body {
-    background: #6C7A89;
+    background: #DC143C;
     font-family: Arial, sans-serif; 
 }
 
@@ -16,7 +16,10 @@ body {
 
 .container h1 {
     color: #fff;
+    background-color:#DC143C ;
+    padding: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 #inputID {
@@ -33,7 +36,7 @@ button {
     margin-bottom: 2px;
     border-radius: 5px;
     border: none;
-    background-color: #153667;
+    background-color: #FF4500;
     color: #fff;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -46,13 +49,14 @@ button {
 }
 
 button:focus {
-    outline: none; /* Removes the default focus outline */
-    box-shadow: 0 0 0 2px #007BFF; /* Adds a custom focus style */    
-    border-radius: 5px; /* Optional: Matches the button's border-radius */
-} /* bunu cok daha guzel yapabiliyoduk ona bi bak */
+    outline: none; 
+    box-shadow: 0 0 0 2px #007BFF;    
+    border-radius: 5px; 
+} 
 
 #tasklistID li {
-    background-color: #117c65;
+    color: #ff7e5f;
+    background-color: #FFDAB9;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -69,5 +73,5 @@ button:focus {
 
 #tasklistID li button {
     margin-left: auto;
-    background-color: #ff4d4d;
+    background-color: #FFB347;
 }
