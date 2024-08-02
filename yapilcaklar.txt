@@ -1,0 +1,2 @@
+Done buttonunu delete diye degister sonrasinda check box ekle.
+yapilacaklar kutusunu ortala widhtini ayarlamayi unutma.
