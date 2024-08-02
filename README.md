@@ -10,18 +10,6 @@ This is a simple To-Do List application that allows users to add, edit, rearrang
 - Delete tasks
 - Tasks are saved in an SQLite database
 
-## Project Structure
-.
-├── database.db # SQLite database file
-├── index.html # Main HTML file
-├── rearrange.html # HTML file for rearranging tasks
-├── style.css # Main CSS file
-├── rearrange.css # CSS file for rearranging tasks
-├── script.js # Main JavaScript file
-├── rearrange.js # JavaScript file for rearranging tasks
-├── index.js # Node.js server file
-└── README.md # Project documentation
-
 ## Installation
 
 ### Prerequisites
@@ -153,9 +141,3 @@ SQLite database file that stores the tasks.
 - Ensure that Node.js is installed on your machine.
 - Follow the setup instructions carefully to run the application.
 - The application runs on port 3000 by default. Make sure this port is available on your machine.
-
-## Contribution
-Feel free to fork this repository and contribute by submitting a pull request. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-This project is licensed under the MIT License.
